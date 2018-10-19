@@ -1,24 +1,10 @@
-console.log('Not implemented yet!');
+//console.log('Not implemented yet!');
+let convert = require('convert-units')
+let toConvert, sourceUnit, constString, targetUnit, solution;
+constString='to';
+        /*toConvert=process.argv[0];
+        sourceUnit=process.argv[2];
+        targetUnit=process.argv[3];*/
+        solution= convert(process.argv[1]).from(process.argv[2]).to(process.argv[4])
+        process.stdout.write('From' + toConvert+ ' '+sourceUnit+' '+constString+ ' '+solution+' '+targetUnit );
 
-let toConvert, sourceUnit, stringTo, targetUnit;
-stringTo='to';
-
-
-
-
-if(process.argv.length === 6){
-    toConvert=process.argv[1];
-    for(let i=2;i<process.argv.length;i++){
-
-        //source
-        switch(process.argv[2]){
-            case 'm':
-                
-
-            case 'mm':
-
-        {
-    }
-
-
-}
